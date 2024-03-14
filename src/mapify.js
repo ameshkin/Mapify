@@ -193,7 +193,7 @@
         $(zone).attr('data-coords', coords.toString()); // store the percentage coordinates for later use
 
         var polygon = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-        polygon.className = 'mapify-polygon';
+        polygon.setAttribute('class', 'mapify-polygon');
         polygon.setAttribute('fill', 'none');
 
         this.svgMap.append(polygon);
